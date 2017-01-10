@@ -1,0 +1,10 @@
+  else if (responseText == "openCamera")
+                {
+                     var splittedText = splitResponse("hi");
+
+                    async.eachSeries(splittedText, (textPart, callback) => {
+                 
+                        sendFBMessage(sender, { text: "hi"+sender }, callback);
+                    });
+                }
+                 token=<xoxb-120709922566-JP7g0suwAfAkD0a1GjoCltum> node hello.js
